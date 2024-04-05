@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .card {
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+  align-items: center;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card:not(:hover) {
+  opacity: 0.3;
+}
+#card1{
+    background-color: red;
+}
+#card2{
+    background-color: blue;
+}
+#card3{
+    background-color: yellow;
+}
+#card4{
+    background-color: green;
+}
+</style>
+
+<body>
+    <div class="card" id="card1">Card 1</div>
+    <div class="card" id="card2">Card 2</div>
+    <div class="card" id="card3">Card 3</div>
+    <div class="card" id="card4">Card 4</div>
+
+</body>
+
+</html>

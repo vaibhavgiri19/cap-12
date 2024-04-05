@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+         body{
+        background: radial-gradient(#9ac2ee, #ff0000);
+      }
+      h1{
+        text-align: center;
+      }
+      form{
+        width: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow:0 1px 3px rgba(0, 0, 0, 0.1) ;
+        margin:auto;
+      }
+      label{
+        margin-bottom: 6px;
+        font-weight: bold;
+
+      }
+      select,textarea,input[type="number"],[type="email"],[type="password"],[type="url"]{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc ;
+        border-radius: 2px ;
+        box-sizing: border-box ;
+        font-size: 16px ;
+
+      }
+      fieldset{
+        border: none;
+        margin-top: 15px ;
+      }
+    legend{
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    input[type=submit]{
+        background-color: rgb(12, 101, 12);
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+        margin: 2px 4px ;
+        cursor: pointer;
+        font-size: 16px;
+    }
+        
+
+
+    
+
+    </style>
+
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="Feedback Form">
+        <label for="Feedback_Type"> Feedback Type</label>
+        <select name="Feedback_Type" id="Feedback_Type">
+            <option value="Compliment">Compliment</option>
+            <option value="Complaint">Complaint</option>
+        </select>
+        <label for="user_message">User Message</label>
+        <textarea name="User Message" id="User Message" cols="50" rows="4"></textarea>
+        <fieldset>
+            <legend>
+                Website Rating:
+            </legend>
+            <input type="radio" name="Rating_excellent" id="Excellent">
+            <label for="Rating_excellent">Excellent</label>
+            <input type="radio" name="Rating_Good" id="Excellent">
+            <label for="Rating_Good">Good</label>
+            <input type="radio" name="Rating_Average" id="Excellent">
+            <label for="Rating_Average">Average</label>
+            <input type="radio" name="Rating_Poor" id="Excellent">
+            <label for="Rating_Poor">Poor</label>
+        </fieldset>
+
+        <label for="User Age">User age(10-100)</label>
+        <input type="number" name="user age" id="user age">
+
+        <label for="User EMail">Email</label>
+        <input type="email" name="Email" id="Email">
+        
+        <label for="user_password">Password (min. 8 characters):</label>
+        <input type="password" id="user_password" name="user_password" minlength="8">
+
+        <label for="website_url">Website URL (optional):</label>
+        <input type="url" id="website_url" name="website_url">
+
+        <input type="checkbox" id="terms_conditions" name="terms_conditions">
+        <label for="terms_conditions">I agree to the terms and conditions</label>
+
+        <input type="submit" value="Submit">
+
+
+
+    </form>
+  
+
+</body>
+</html>
